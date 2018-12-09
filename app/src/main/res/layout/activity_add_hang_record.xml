@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.AddHangRecordActivity">
+
+    <include layout="@layout/layout_title" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:clipToPadding="false"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="&#12288;挂牌时间："
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/normal_ts"
+                    android:textStyle="bold" />
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:gravity="center">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cv_select_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="3.33dp"
+                        app:cardElevation="2dp"
+                        app:cardPreventCornerOverlap="false"
+                        app:cardUseCompatPadding="false">
+
+                        <android.support.v7.widget.LinearLayoutCompat
+                            android:layout_width="176dp"
+                            android:layout_height="32dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="16dp">
+
+                            <TextView
+                                android:id="@+id/tv_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_weight="1"
+                                android:singleLine="true"
+                                android:ellipsize="marquee"
+                                android:textColor="@color/blue1"
+                                android:textSize="@dimen/normal_ts" />
+
+                            <ImageView
+                                android:layout_width="20.67dp"
+                                android:layout_height="19dp"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:src="@mipmap/select_date" />
+                        </android.support.v7.widget.LinearLayoutCompat>
+                    </android.support.v7.widget.CardView>
+
+                </android.support.v7.widget.LinearLayoutCompat>
+
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:visibility="gone"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="&#12288;负责单位："
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/normal_ts"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+
+                <Spinner
+                    android:id="@+id/sp_departments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown" />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+
+
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="督办人单位："
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/normal_ts"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/sp_track_people_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown" />
+            </android.support.v7.widget.LinearLayoutCompat>
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="督&#12288;办&#12288;人："
+                    android:textColor="@color/colorGray"
+                    android:textSize="@dimen/normal_ts"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/sp_track_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown" />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="32dp"
+                android:gravity="center_vertical"
+                android:text="&#12288;整改要求："
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/normal_ts"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/shape_rectangle_rounded_blue"
+                android:gravity="top"
+                android:hint="请输入要求..."
+                android:minHeight="152dp"
+                android:paddingLeft="32dp"
+                android:paddingTop="12dp"
+                android:paddingRight="32dp"
+                android:paddingBottom="12dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normal_ts" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+    </ScrollView>
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/layerlist_bottom_bg"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_rectangle_solid_blue_stroke_gray"
+            android:gravity="center"            android:text="@string/ok_backspace"
+            android:textColor="@color/white"
+            android:textSize="@dimen/middle_ts" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.LinearLayoutCompat>

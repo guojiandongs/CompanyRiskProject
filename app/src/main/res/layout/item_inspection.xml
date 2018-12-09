@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/view_top_top"
+                android:layout_width="0.67dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/colorAAA" />
+
+            <View
+                android:id="@+id/view_top"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:background="@drawable/selecter_shape_circle_inspection_solid" />
+
+            <View
+                android:id="@+id/view_top_bottom"
+                android:layout_width="0.67dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/colorAAA" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <TextView
+            android:id="@+id/tv_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="巡检时间 09:20"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/view_bottom"
+                android:layout_width="0.67dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/colorAAA" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="11.33dp"
+                android:layout_height="14dp"
+                android:src="@mipmap/ic_time" />
+
+            <TextView
+                android:id="@+id/tv_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="小店东2号"
+                android:textColor="@color/colorGraylighter"
+                android:textSize="12sp" />
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.v7.widget.LinearLayoutCompat>

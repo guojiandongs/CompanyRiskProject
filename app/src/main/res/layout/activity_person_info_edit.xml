@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bar_color"
+    android:orientation="vertical"
+    tools:context=".activity.MianActivity">
+
+    <include layout="@layout/layout_title" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_weight="1"
+                android:text="@string/head_portrait"
+                android:textColor="@color/colorGrayDarker"
+                android:textSize="@dimen/normal_ts" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv_head"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="24dp"
+                android:src="@mipmap/ic_fake_head"
+                tools:src="@tools:sample/avatars" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="7.33dp"
+            android:layout_marginRight="7.33dp"
+            android:background="@color/colorDevide" />
+
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_weight="1"
+                android:text="@string/nickname"
+                android:textColor="@color/colorGrayDarker"
+                android:textSize="@dimen/normal_ts" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="24dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/colorGrayDarker"
+                android:textSize="@dimen/normal_ts" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="7.33dp"
+            android:layout_marginRight="7.33dp"
+            android:background="@color/colorDevide" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_weight="1"
+                android:text="@string/phone_number"
+                android:textColor="@color/colorGrayDarker"
+                android:textSize="@dimen/normal_ts" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="24dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/colorGrayDarker"
+                android:textSize="@dimen/normal_ts" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="7.33dp"
+            android:layout_marginRight="7.33dp"
+            android:background="@color/colorDevide" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_weight="1"
+                android:text="@string/department"
+                android:textColor="@color/colorGrayDarker"
+                android:textSize="@dimen/normal_ts" />
+
+            <EditText
+                android:id="@+id/et_department"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="24dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/colorGrayDarker"
+                android:textSize="@dimen/normal_ts" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="7.33dp"
+            android:layout_marginRight="7.33dp"
+            android:background="@color/colorDevide" />
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_weight="1"
+                android:text="@string/position"
+                android:textColor="@color/colorGrayDarker"
+                android:textSize="@dimen/normal_ts" />
+
+            <EditText
+                android:id="@+id/et_position"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="24dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/colorGrayDarker"
+                android:textSize="@dimen/normal_ts" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/layerlist_bottom_bg"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_rectangle_solid_blue_stroke_gray"
+            android:gravity="center"
+            android:text="@string/ok_backspace"
+            android:textColor="@color/white"
+            android:textSize="@dimen/middle_ts" />
+    </android.support.v7.widget.LinearLayoutCompat>
+</android.support.v7.widget.LinearLayoutCompat>

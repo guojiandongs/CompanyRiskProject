@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bar_color"
+    android:orientation="vertical"
+    tools:context=".activity.LeftOptionSelectActivity">
+
+    <include layout="@layout/layout_title" />
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="7.33dp"
+        android:paddingRight="7.33dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.33dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="7.33dp"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="3dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false">
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_profession"
+                        android:layout_width="match_parent"
+                        android:layout_height="32.67dp"
+                        android:background="@drawable/select_button_solid_blue_white"
+                        android:gravity="center"
+                        android:text="专&#8195;业"
+                        android:textColor="@drawable/select_color_white_gray"
+                        android:textSize="@dimen/normal_ts" />
+
+                    <Spinner
+                        android:id="@+id/spinner_profession"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:spinnerMode="dropdown" />
+
+                </android.support.v7.widget.LinearLayoutCompat>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.33dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="7.33dp"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="3dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false">
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_hidden_units"
+                        android:layout_width="match_parent"
+                        android:layout_height="32.67dp"
+                        android:background="@drawable/select_button_solid_blue_white"
+                        android:gravity="center"
+                        android:text="隐患单位"
+                        android:textColor="@drawable/select_color_white_gray"
+                        android:textSize="@dimen/normal_ts" />
+
+                    <Spinner
+                        android:id="@+id/spinner_hidden_units"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:spinnerMode="dropdown" />
+
+                </android.support.v7.widget.LinearLayoutCompat>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.33dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="7.33dp"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="3dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false">
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="32.67dp"
+                        android:background="@drawable/select_button_solid_blue_white"
+                        android:gravity="center"
+                        android:text="区&#8195;域"
+                        android:textColor="@drawable/select_color_white_gray"
+                        android:textSize="@dimen/normal_ts" />
+
+                    <Spinner
+                        android:id="@+id/spinner_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:spinnerMode="dropdown" />
+
+                </android.support.v7.widget.LinearLayoutCompat>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.33dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="7.33dp"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="3dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false">
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_profession_result"
+                        android:layout_width="match_parent"
+                        android:layout_height="32.67dp"
+                        android:background="@drawable/select_button_solid_blue_white"
+                        android:gravity="center"
+                        tools:text="专&#8195;业"
+                        android:textColor="@drawable/select_color_white_gray"
+                        android:textSize="@dimen/normal_ts" />
+
+                </android.support.v7.widget.LinearLayoutCompat>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.33dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="7.33dp"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="3dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false">
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_hidden_units_result"
+                        android:layout_width="match_parent"
+                        android:layout_height="32.67dp"
+                        android:background="@drawable/select_button_solid_blue_white"
+                        android:gravity="center"
+                        tools:text="隐患单位"
+                        android:textColor="@drawable/select_color_white_gray"
+                        android:textSize="@dimen/normal_ts" />
+
+
+                </android.support.v7.widget.LinearLayoutCompat>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.33dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="7.33dp"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="3dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false">
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_area_result"
+                        android:layout_width="match_parent"
+                        android:layout_height="32.67dp"
+                        android:background="@drawable/select_button_solid_blue_white"
+                        android:gravity="center"
+                        tools:text="区&#8195;域"
+                        android:textColor="@drawable/select_color_white_gray"
+                        android:textSize="@dimen/normal_ts" />
+
+                </android.support.v7.widget.LinearLayoutCompat>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/layerlist_bottom_bg"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_rectangle_solid_blue_stroke_gray"
+            android:gravity="center"
+            android:text="@string/ok_backspace"
+            android:textColor="@color/white"
+            android:textSize="@dimen/middle_ts" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v7.widget.LinearLayoutCompat>

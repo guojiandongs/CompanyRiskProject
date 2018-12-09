@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.BleSdkActivity">
+
+    <Button
+        android:id="@+id/btnStartScan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="onBtnClick"
+        android:text="开始扫描"
+        app:layout_constraintEnd_toStartOf="@+id/btnStopScan"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnStopScan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="onBtnClick"
+        android:text="停止扫描"
+        app:layout_constraintEnd_toStartOf="@+id/btnRequestPermission"
+        app:layout_constraintStart_toEndOf="@+id/btnStartScan"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnRequestPermission"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="onBtnClick"
+        android:text="申请权限"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnStopScan"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="top"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStartScan"
+        tools:text="扫描结果" />
+
+</android.support.constraint.ConstraintLayout>
